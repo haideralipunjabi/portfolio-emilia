@@ -96,7 +96,6 @@ Card.propTypes = {
   path: PropTypes.string.isRequired,
   cover: PropTypes.object.isRequired,
   date: PropTypes.string.isRequired,
-  areas: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
   delay: PropTypes.number.isRequired,
 }
