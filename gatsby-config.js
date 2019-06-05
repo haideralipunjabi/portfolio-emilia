@@ -8,8 +8,13 @@ module.exports = {
     siteUrl: config.siteUrl + pathPrefix,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'uploads',
+        path: `${__dirname}/static/img`,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -17,6 +22,9 @@ module.exports = {
         path: `${__dirname}/content/projects`,
       },
     },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
+    `gatsby-plugin-netlify-cms-paths`,
     {
       resolve: 'gatsby-mdx',
       options: {
@@ -38,8 +46,18 @@ module.exports = {
         trackingId: config.googleAnalyticsID,
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        plugins: [`gatsby-plugin-netlify-cms-paths`],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        plugins: [`gatsby-plugin-netlify-cms-paths`],
+      },
+    },
     'gatsby-plugin-lodash',
     'gatsby-plugin-sitemap',
     {
@@ -57,5 +75,6 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify',
+    'gatsby-plugin-netlify-cms',
   ],
 }
