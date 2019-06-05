@@ -11,8 +11,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'uploads',
         path: `${__dirname}/static/img`,
+        name: 'uploads',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
       },
     },
     {
@@ -20,6 +27,27 @@ module.exports = {
       options: {
         name: 'projects',
         path: `${__dirname}/content/projects`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          // gatsby-remark-relative-images must
+          // go before gatsby-remark-images
+          {
+            resolve: `gatsby-remark-relative-images`,
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+            },
+          },
+        ],
       },
     },
     'gatsby-plugin-react-helmet',
@@ -46,18 +74,8 @@ module.exports = {
         trackingId: config.googleAnalyticsID,
       },
     },
-    {
-      resolve: `gatsby-transformer-sharp`,
-      options: {
-        plugins: [`gatsby-plugin-netlify-cms-paths`],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-sharp',
-      options: {
-        plugins: [`gatsby-plugin-netlify-cms-paths`],
-      },
-    },
+    `gatsby-transformer-sharp`,
+    'gatsby-plugin-sharp',
     'gatsby-plugin-lodash',
     'gatsby-plugin-sitemap',
     {

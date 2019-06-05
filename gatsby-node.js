@@ -1,5 +1,6 @@
 const path = require('path')
 const _ = require('lodash')
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 // graphql function doesn't throw an error so we have to check to check for the result.errors to throw manually
 const wrapper = promise =>
@@ -11,6 +12,7 @@ const wrapper = promise =>
   })
 
 exports.onCreateNode = ({ node, actions }) => {
+  fmImagesToRelative(node)
   const { createNodeField } = actions
   let slug
   // Search for MDX filenodes
