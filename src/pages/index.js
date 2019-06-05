@@ -49,7 +49,6 @@ const Index = ({
               title={project.frontmatter.title}
               cover={project.frontmatter.cover.childImageSharp.fluid}
               path={project.fields.slug}
-              areas={project.frontmatter.areas}
               key={project.fields.slug}
             />
           ))}
@@ -86,7 +85,6 @@ export const pageQuery = graphql`
           }
           date(formatString: "DD.MM.YYYY")
           title
-          areas
         }
       }
     }
