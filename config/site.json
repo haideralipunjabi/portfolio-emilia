@@ -1,40 +1,35 @@
 {
-  "pathPrefix": "/",
-
-  "siteTitle": "Emilia", 
-  "siteTitleAlt": "Emilia - Gatsby Starter Portfolio", 
-  "siteTitleShort": "Emilia", 
-  "siteHeadline": "Publishing & Creating stunning photos",
-  "siteUrl": "https://emilia.lekoarts.de", 
-  "siteLanguage": "en", 
+  "userTwitter": "@emilia",
+  "siteUrl": "https://emilia.lekoarts.de",
+  "googleAnalyticsID": "UA-47519312-4",
+  "ogSiteName": "emilia",
+  "author": "LekoArts",
+  "name": "LekoArts",
+  "siteTitleShort": "Hackesta",
+  "ogLanguage": "en_US",
+  "siteTitle": "Hackesta",
   "siteLogo": "/logos/logo.png",
   "siteDescription": "Dark One-Page portfolio with cards & detailed project views",
-  "author": "LekoArts",
-
-  "siteFBAppID": "123456789",
-  "userTwitter": "@emilia",
-  "ogSiteName": "emilia", 
-  "ogLanguage": "en_US",
-  "googleAnalyticsID": "UA-47519312-4",
-
-  "themeColor": "#3498DB",
   "backgroundColor": "#2b2e3c",
-
-  "avatar": "/logos/lekoarts.png",
-  "name": "LekoArts",
   "location": "Germany",
   "socialMedia": [
     {
-      "url": "https://twitter.com/lekoarts_de",
-      "name": "Twitter"
+      "name": "Twitter",
+      "url": "https://twitter.com/lekoarts_de"
     },
     {
-      "url": "https://www.instagram.com/lekoarts.de",
-      "name": "Instagram"
+      "name": "Instagram",
+      "url": "https://www.instagram.com/lekoarts.de"
     },
     {
-      "url": "https://www.lekoarts.de/en",
-      "name": "Homepage"
+      "name": "Homepage",
+      "url": "https://www.lekoarts.de/en"
     }
-  ]
+  ],
+  "siteTitleAlt": "Hackesta",
+  "avatar": "/logos/lekoarts.png",
+  "siteFBAppID": "123456789",
+  "themeColor": "#3498DB",
+  "siteHeadline": "Publishing & Creating stunning photos",
+  "siteLanguage": "en"
 }
