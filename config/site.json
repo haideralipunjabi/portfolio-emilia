@@ -1,35 +1,35 @@
 {
-  "userTwitter": "@emilia",
-  "siteUrl": "https://emilia.lekoarts.de",
+  "userTwitter": "@HackestaOrg",
+  "siteUrl": "https://hackesta.org",
   "googleAnalyticsID": "UA-47519312-4",
-  "ogSiteName": "emilia",
+  "ogSiteName": "haceksta",
   "author": "Hackesta",
   "name": "LekoArts",
   "siteTitleShort": "Hackesta",
   "ogLanguage": "en_US",
   "siteTitle": "Hackesta",
   "siteLogo": "/logos/logo.png",
-  "siteDescription": "Dark One-Page portfolio with cards & detailed project views",
-  "backgroundColor": "#2b2e3c",
+  "siteDescription": "Idea | Inspiration | Implementation",
+  "backgroundColor": "#FF0000",
   "location": "Germany",
   "socialMedia": [
     {
       "name": "Twitter",
-      "url": "https://twitter.com/lekoarts_de"
+      "url": "https://twitter.com/hackestaorg"
     },
     {
       "name": "Instagram",
-      "url": "https://www.instagram.com/lekoarts.de"
+      "url": "https://www.instagram.com/hackesta"
     },
     {
       "name": "Homepage",
-      "url": "https://www.lekoarts.de/en"
+      "url": "https://www.haceksta.org"
     }
   ],
   "siteTitleAlt": "Hackesta",
   "avatar": "/logos/lekoarts.png",
   "siteFBAppID": "123456789",
-  "themeColor": "#3498DB",
-  "siteHeadline": "Publishing & Creating stunning photos",
+  "themeColor": "#00cc00",
+  "siteHeadline": "Idea | Inspiration | Implementation",
   "siteLanguage": "en"
 }
