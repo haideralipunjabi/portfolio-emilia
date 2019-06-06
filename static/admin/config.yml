@@ -21,7 +21,7 @@ collections:
     editor:
       preview: false
     files:
-      - file: "/config/site.js"
+      - file: "/config/site.json"
         label: "Site configuration"
         name: "config"
         fields:
