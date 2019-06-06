@@ -16,3 +16,46 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "cover", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "site"
+    label: "Site"
+    editor:
+      preview: false
+    files:
+      - file: "/config/site.js"
+        label: "Site configuration"
+        name: "config"
+        fields:
+          - {label: "Site Title", name: "siteTitle"}
+          - {label: "Site Title (Alt)", name: "siteTitleAlt"}
+          - {label: "Site Title Short", name: "siteTitleShort"}
+          - {label: "Site Headline", name: "siteHeadline"}
+          - {label: "Site URL", name: "siteUrl"}
+          - {label: "Site Language", name: "siteLanguage"}
+          - {label: "Site Logo", name: "siteLogo"}
+          - {label: "Site Description", name: "siteDescription"}
+          - {label: "Author", name: "author"}
+
+          - {label: "Facebook App ID", name: "siteFBAppID"}
+          - {label: "Twitter Handle", name: "userTwitter"}
+          - {label: "ogSiteName", name: "ogSiteName"}
+          - {label: "ogLanguage", name: "ogLanguage"}
+          - {label: "googleAnalyticsID", name: "googleAnalyticsID"}
+
+          # Date format used in your project
+          # More information here: https://date-fns.org/v1.29.0/docs/format
+          # - {label: "dateFormat", name: "dateFormat"}
+
+          # Manifest and Progress color
+          - {label: "Theme Color", name: "themeColor"}
+          - {label: "Background Color", name: "backgroundColor"}
+
+          # # Settings for typography.js
+          # - {label: "headerFontFamily", name: "headerFontFamily"}
+          # - {label: "bodyFontFamily", name: "bodyFontFamily"}
+          # - {label: "baseFontSize", name: "baseFontSize"}
+
+          # Your information
+          - {label: "Avatar", name: "avatar"} # @todo image ?
+          - {label: "Name", name: "name"}
+          - {label: "Location", name: "location"}
+          - {label: "Social Media", name: "socialMedia", widget: "list", fields: [{label: Name, name: name}, {label: Url, name: url}]}
