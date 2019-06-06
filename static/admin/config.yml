@@ -22,6 +22,8 @@ collections:
       preview: false
     files:
       - file: "/config/site.json"
+        extension: "json"
+        format: "json"
         label: "Site configuration"
         name: "config"
         fields:
